@@ -4,570 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#0f4c81" />
-
-  <title>HantaGuard24 | Hantavirus Symptoms, Prevention, and Care</title>
-  <meta name="description" content="HantaGuard24 is a clean, professional one-page guide to hantavirus symptoms, transmission, prevention, and when to seek medical care." />
-  <meta name="keywords" content="hantavirus, hantavirus symptoms, hantavirus prevention, hantavirus treatment, rodent-borne disease, HantaGuard24" />
+  <title>Hantavirus Symptoms, Prevention & Care | HantaGuard24</title>
+  <meta name="description" content="HantaGuard24 is a clear, professional guide to hantavirus symptoms, transmission, prevention, and when to seek medical care." />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <meta name="author" content="HantaGuard24" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
   <link rel="canonical" href="https://www.hantaguard24.com/" />
-
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="HantaGuard24 | Hantavirus Symptoms, Prevention, and Care" />
-  <meta property="og:description" content="A polished one-page resource explaining hantavirus clearly, with prevention tips, symptoms, and medical warning signs." />
-  <meta property="og:url" content="https://www.hantaguard24.com/" />
-  <meta property="og:site_name" content="HantaGuard24" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="HantaGuard24 | Hantavirus Symptoms, Prevention, and Care" />
-  <meta name="twitter:description" content="Learn the basics of hantavirus in a clean, modern one-page website designed for clarity and search visibility." />
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalWebPage",
-    "name": "HantaGuard24",
-    "description": "A professional one-page guide to hantavirus symptoms, transmission, prevention, and care.",
-    "about": {
-      "@type": "MedicalCondition",
-      "name": "Hantavirus infection"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "HantaGuard24"
-    }
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How does hantavirus spread?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Hantavirus usually spreads from rodents to humans through exposure to urine, droppings, saliva, or contaminated dust."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What are the first symptoms of hantavirus?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Early symptoms may include fever, headache, muscle aches, fatigue, nausea, vomiting, and stomach pain."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is hantavirus contagious between people?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Person-to-person transmission is uncommon. Hantavirus is usually spread from rodents to humans."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is there a vaccine or cure?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "There is no specific cure or vaccine. Treatment is supportive and may require hospital care."
-        }
-      }
-    ]
-  }
-  </script>
-
-  <style>
-    :root {
-      --bg: #f5f8fc;
-      --bg-2: #ffffff;
-      --panel: rgba(255, 255, 255, 0.92);
-      --panel-2: rgba(248, 251, 255, 0.98);
-      --card: #ffffff;
-      --line: rgba(15, 23, 42, 0.08);
-      --text: #0f172a;
-      --muted: #52607a;
-      --brand: #0f4c81;
-      --brand-2: #2b8bd6;
-      --accent: #1f9d7a;
-      --warning: #f59e0b;
-      --danger: #dc2626;
-      --shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
-      --radius: 24px;
-      --max: 1180px;
-    }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: var(--text);
-      line-height: 1.6;
-      background:
-        radial-gradient(circle at top left, rgba(43, 139, 214, 0.10), transparent 28%),
-        radial-gradient(circle at top right, rgba(31, 157, 122, 0.08), transparent 22%),
-        linear-gradient(180deg, #f7fbff 0%, #eef4fb 100%);
-    }
-
-    a { color: inherit; text-decoration: none; }
-    img { max-width: 100%; display: block; }
-
-    .skip-link {
-      position: absolute;
-      left: -999px;
-      top: 0;
-      background: var(--brand);
-      color: #fff;
-      padding: 12px 16px;
-      border-radius: 10px;
-      z-index: 9999;
-    }
-    .skip-link:focus {
-      left: 16px;
-      top: 16px;
-    }
-
-    .wrap {
-      width: min(100% - 32px, var(--max));
-      margin: 0 auto;
-    }
-
-    .topbar {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      backdrop-filter: blur(18px);
-      background: rgba(255,255,255,0.82);
-      border-bottom: 1px solid var(--line);
-    }
-
-    .topbar-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 18px;
-      padding: 14px 0;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      min-width: fit-content;
-    }
-
-    .brand-mark {
-      width: 44px;
-      height: 44px;
-      border-radius: 14px;
-      display: grid;
-      place-items: center;
-      background: linear-gradient(145deg, var(--brand), var(--brand-2));
-      color: #fff;
-      font-weight: 900;
-      box-shadow: 0 14px 30px rgba(15, 76, 129, 0.18);
-    }
-
-    .brand-text strong {
-      display: block;
-      font-size: 1.05rem;
-      letter-spacing: 0.2px;
-    }
-
-    .brand-text span {
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-
-    .nav {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      gap: 10px;
-    }
-
-    .nav a {
-      color: var(--muted);
-      padding: 8px 12px;
-      border-radius: 999px;
-      border: 1px solid transparent;
-      transition: 0.2s ease;
-      font-size: 0.95rem;
-    }
-
-    .nav a:hover,
-    .nav a:focus {
-      color: var(--brand);
-      border-color: rgba(15, 76, 129, 0.16);
-      background: rgba(15, 76, 129, 0.05);
-    }
-
-    .hero {
-      padding: 52px 0 18px;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.3fr 0.7fr;
-      gap: 22px;
-      align-items: stretch;
-    }
-
-    .hero-main,
-    .hero-side,
-    .section,
-    .info-card {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-    }
-
-    .hero-main {
-      padding: 34px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-main::before {
-      content: "";
-      position: absolute;
-      inset: auto -120px -120px auto;
-      width: 300px;
-      height: 300px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(43, 139, 214, 0.14), transparent 65%);
-      pointer-events: none;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: rgba(15, 76, 129, 0.08);
-      border: 1px solid rgba(15, 76, 129, 0.12);
-      color: var(--brand);
-      font-size: 0.88rem;
-      margin-bottom: 18px;
-    }
-
-    h1 {
-      margin: 0 0 16px;
-      font-size: clamp(2.2rem, 5vw, 4.4rem);
-      line-height: 1.02;
-      letter-spacing: -0.04em;
-      color: #0b1b2d;
-    }
-
-    .lead {
-      max-width: 68ch;
-      margin: 0 0 24px;
-      color: var(--muted);
-      font-size: 1.05rem;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 13px 18px;
-      border-radius: 14px;
-      font-weight: 700;
-      border: 1px solid transparent;
-      transition: 0.2s ease;
-      white-space: nowrap;
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, var(--brand), var(--brand-2));
-      color: white;
-      box-shadow: 0 16px 32px rgba(15, 76, 129, 0.18);
-    }
-
-    .btn-primary:hover { transform: translateY(-1px); }
-
-    .btn-secondary {
-      background: #ffffff;
-      border-color: var(--line);
-      color: var(--text);
-    }
-
-    .btn-secondary:hover {
-      background: #f8fbff;
-    }
-
-    .hero-side {
-      padding: 22px;
-      display: grid;
-      gap: 14px;
-      align-content: start;
-    }
-
-    .stat {
-      background: rgba(255,255,255,0.72);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 16px;
-    }
-
-    .stat .label {
-      color: var(--muted);
-      font-size: 0.9rem;
-      margin-bottom: 6px;
-    }
-
-    .stat .value {
-      font-size: 1.12rem;
-      font-weight: 800;
-      margin-bottom: 4px;
-      color: #0b1b2d;
-    }
-
-    .stat .desc {
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
-
-    main {
-      padding: 8px 0 64px;
-    }
-
-    .section {
-      padding: 28px;
-      margin-top: 20px;
-    }
-
-    .section h2 {
-      margin: 0 0 12px;
-      font-size: clamp(1.45rem, 2.5vw, 2.05rem);
-      letter-spacing: -0.02em;
-      color: #0b1b2d;
-    }
-
-    .section p,
-    .section li {
-      color: var(--muted);
-      font-size: 1rem;
-    }
-
-    .grid-2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-    }
-
-    .info-card {
-      padding: 18px;
-      background: rgba(255,255,255,0.82);
-    }
-
-    .info-card h3 {
-      margin: 0 0 10px;
-      color: #0b1b2d;
-      font-size: 1.05rem;
-    }
-
-    .check-list,
-    .symptom-list {
-      list-style: none;
-      padding: 0;
-      margin: 14px 0 0;
-      display: grid;
-      gap: 10px;
-    }
-
-    .check-list li,
-    .symptom-list li {
-      position: relative;
-      padding-left: 28px;
-    }
-
-    .check-list li::before,
-    .symptom-list li::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0.46em;
-      width: 14px;
-      height: 14px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--brand), var(--brand-2));
-      box-shadow: 0 0 0 4px rgba(15, 76, 129, 0.08);
-    }
-
-    .callout {
-      border-left: 4px solid var(--warning);
-      background: rgba(245, 158, 11, 0.10);
-      padding: 16px 18px;
-      border-radius: 16px;
-      margin-top: 16px;
-      color: #7a4c00;
-    }
-
-    .warning {
-      border-left-color: var(--danger);
-      background: rgba(220, 38, 38, 0.08);
-      color: #991b1b;
-    }
-
-    .overview-grid {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 18px;
-      margin-top: 10px;
-    }
-
-    .facts {
-      display: grid;
-      gap: 12px;
-    }
-
-    .fact {
-      padding: 16px;
-      border-radius: 18px;
-      background: rgba(255,255,255,0.74);
-      border: 1px solid var(--line);
-    }
-
-    .fact strong {
-      display: block;
-      margin-bottom: 4px;
-      color: #0b1b2d;
-    }
-
-    .pill-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 16px;
-    }
-
-    .pill {
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: rgba(15, 76, 129, 0.05);
-      border: 1px solid rgba(15, 76, 129, 0.10);
-      color: #163455;
-      font-size: 0.92rem;
-    }
-
-    .faq {
-      display: grid;
-      gap: 12px;
-      margin-top: 14px;
-    }
-
-    .faq-item {
-      overflow: hidden;
-      border-radius: 18px;
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,0.82);
-    }
-
-    .faq-q {
-      width: 100%;
-      border: 0;
-      background: transparent;
-      color: var(--text);
-      text-align: left;
-      padding: 16px 18px;
-      cursor: pointer;
-      font-size: 1rem;
-      font-weight: 700;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-    }
-
-    .faq-a {
-      display: none;
-      padding: 0 18px 16px;
-      color: var(--muted);
-    }
-
-    .faq-item.open .faq-a { display: block; }
-
-    .footer {
-      padding: 20px 0 42px;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .footer-box {
-      padding-top: 18px;
-      border-top: 1px solid var(--line);
-      display: grid;
-      gap: 10px;
-    }
-
-    .micro {
-      font-size: 0.88rem;
-      color: #64748b;
-    }
-
-    .toc {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 18px;
-    }
-
-    .toc a {
-      display: inline-flex;
-      padding: 9px 12px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.9);
-      border: 1px solid var(--line);
-      color: #163455;
-      font-size: 0.92rem;
-    }
-
-    @media (max-width: 920px) {
-      .hero-grid,
-      .grid-2,
-      .overview-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .nav {
-        display: none;
-      }
-
-      .hero-main {
-        padding: 26px;
-      }
-    }
-
-    @media (max-width: 640px) {
-      .wrap { width: min(100% - 22px, var(--max)); }
-      .hero { padding-top: 24px; }
-      .section,
-      .hero-main,
-      .hero-side {
-        border-radius: 20px;
-      }
-      h1 { font-size: clamp(2rem, 11vw, 3rem); }
-      .btn { width: 100%; }
-      .hero-actions { flex-direction: column; }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
-<body>
+<body class="page-home">
   <a class="skip-link" href="#content">Skip to content</a>
 
   <header class="topbar">
@@ -579,14 +24,12 @@
           <span>Clear hantavirus information</span>
         </div>
       </div>
-
       <nav class="nav" aria-label="Page sections">
-        <a href="#overview">Overview</a>
-        <a href="#symptoms">Symptoms</a>
-        <a href="#spread">Spread</a>
-        <a href="#prevention">Prevention</a>
-        <a href="#care">Care</a>
-        <a href="#faq">FAQ</a>
+        <a href="index.html">Home</a>
+        <a href="symptoms.html">Symptoms</a>
+        <a href="prevention.html">Prevention</a>
+        <a href="faq.html">FAQ</a>
+        <a href="sources.html">Sources</a>
       </nav>
     </div>
   </header>
@@ -595,22 +38,17 @@
     <div class="wrap hero-grid">
       <div class="hero-main">
         <div class="eyebrow">Professional one-page health resource</div>
-        <h1>Understand hantavirus with a clean, modern, and trustworthy guide.</h1>
-        <p class="lead">
-          HantaGuard24 explains what hantavirus is, how it spreads, what symptoms to watch for, how to reduce risk,
-          and when medical attention is needed.
-        </p>
-
+        <h1>Hantavirus: symptoms, prevention, and when to seek care.</h1>
+        <p class="lead">HantaGuard24 explains what hantavirus is, how it spreads, which symptoms matter most, how to lower your risk, and when medical attention is needed.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#prevention">Learn prevention</a>
-          <a class="btn btn-secondary" href="#faq">Read the FAQ</a>
+          <a class="btn btn-primary" href="prevention.html">Learn prevention</a>
+          <a class="btn btn-secondary" href="faq.html">Read the FAQ</a>
         </div>
-
         <div class="toc" aria-label="Quick links">
-          <a href="#overview">What it is</a>
-          <a href="#symptoms">Warning signs</a>
-          <a href="#spread">How it spreads</a>
-          <a href="#care">When to seek help</a>
+          <a href="index.html">Overview</a>
+          <a href="symptoms.html">Symptoms</a>
+          <a href="prevention.html">Prevention</a>
+          <a href="sources.html">Sources</a>
         </div>
       </div>
 
@@ -639,14 +77,8 @@
       <h2>What is Hantavirus?</h2>
       <div class="overview-grid">
         <div>
-          <p>
-            Hantaviruses are viruses carried by rodents. Infection can happen when people breathe in contaminated dust
-            or come into contact with urine, droppings, saliva, or nesting materials from infected animals.
-          </p>
-          <p>
-            Symptoms may begin like the flu, which is why early awareness matters. A clear, well-structured page helps
-            visitors find the information they need quickly and stay longer on the site.
-          </p>
+          <p>Hantaviruses are viruses carried by rodents. Infection can happen when people breathe in contaminated dust or come into contact with urine, droppings, saliva, or nesting materials from infected animals.</p>
+          <p>Symptoms may begin like the flu, which is why early awareness matters. A clear, well-structured page helps visitors find the information they need quickly and stay engaged.</p>
           <div class="pill-row" aria-label="Key topics">
             <span class="pill">Rodent-borne</span>
             <span class="pill">Early flu-like symptoms</span>
@@ -654,96 +86,10 @@
             <span class="pill">Medical warning signs</span>
           </div>
         </div>
-
         <div class="facts">
-          <div class="fact">
-            <strong>Common exposure locations</strong>
-            Cabins, sheds, garages, attics, basements, barns, and other enclosed areas where rodents may live.
-          </div>
-          <div class="fact">
-            <strong>Main risk factor</strong>
-            Disturbing contaminated dust or cleaning rodent waste without proper precautions.
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="symptoms" class="section">
-      <h2>Symptoms</h2>
-      <div class="grid-2">
-        <div class="info-card">
-          <h3>Early symptoms</h3>
-          <ul class="symptom-list">
-            <li>Fever</li>
-            <li>Headache</li>
-            <li>Muscle aches</li>
-            <li>Fatigue</li>
-            <li>Nausea or vomiting</li>
-            <li>Stomach pain or diarrhea</li>
-          </ul>
-        </div>
-
-        <div class="info-card">
-          <h3>Serious warning signs</h3>
-          <ul class="symptom-list">
-            <li>Shortness of breath</li>
-            <li>Coughing</li>
-            <li>Chest tightness</li>
-            <li>Rapid worsening after flu-like symptoms</li>
-          </ul>
-          <div class="callout warning">
-            Breathing problems after possible rodent exposure need urgent medical evaluation.
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="spread" class="section">
-      <h2>How it spreads</h2>
-      <div class="grid-2">
-        <div>
-          <p>
-            Hantavirus usually spreads from rodents to humans, not from person to person. Risk increases when enclosed
-            spaces are disturbed, especially if rodent droppings or nesting material are present.
-          </p>
-          <p>
-            People often encounter the virus while cleaning sheds, opening storage areas, or handling contaminated
-            material in rural or poorly ventilated locations.
-          </p>
-        </div>
-        <div class="info-card">
-          <h3>Common risk situations</h3>
-          <ul class="check-list">
-            <li>Cleaning old storage spaces</li>
-            <li>Sweeping dry rodent droppings</li>
-            <li>Handling nests or contaminated debris</li>
-            <li>Working in closed, dusty areas</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="prevention" class="section">
-      <h2>Prevention</h2>
-      <div class="grid-2">
-        <div class="info-card">
-          <h3>Keep rodents out</h3>
-          <ul class="check-list">
-            <li>Seal cracks, gaps, and entry holes</li>
-            <li>Store food in sealed containers</li>
-            <li>Reduce clutter where rodents can nest</li>
-            <li>Use traps where appropriate</li>
-          </ul>
-        </div>
-
-        <div class="info-card">
-          <h3>Clean safely</h3>
-          <ul class="check-list">
-            <li>Ventilate enclosed areas first</li>
-            <li>Do not sweep dry droppings</li>
-            <li>Wear gloves and a mask when cleaning</li>
-            <li>Disinfect contaminated surfaces carefully</li>
-          </ul>
+          <div class="fact"><strong>Common exposure locations</strong> Cabins, sheds, garages, attics, basements, barns, and other enclosed areas where rodents may live.</div>
+          <div class="fact"><strong>Main risk factor</strong> Disturbing contaminated dust or cleaning rodent waste without proper precautions.</div>
+          <div class="fact"><strong>Incubation period</strong> Symptoms may appear one to eight weeks after exposure, so recent contact still matters.</div>
         </div>
       </div>
     </section>
@@ -752,64 +98,25 @@
       <h2>When to seek medical care</h2>
       <div class="grid-2">
         <div>
-          <p>
-            Hantavirus has no specific cure or vaccine. Treatment is supportive and may require hospital care,
-            especially if breathing problems or other severe symptoms appear.
-          </p>
-          <p>
-            A reliable website should stay calm, clear, and medically responsible. This section helps visitors understand
-            that worsening symptoms should not be ignored.
-          </p>
+          <p>Hantavirus has no specific cure or vaccine. Treatment is supportive and may require hospital care, especially if breathing problems or other severe symptoms appear.</p>
+          <p>If flu-like symptoms get worse after rodent exposure, medical evaluation should happen quickly.</p>
         </div>
         <div class="callout">
-          <strong>Important:</strong> This page is for informational purposes only and does not replace professional
-          medical advice, diagnosis, or treatment.
+          <strong>Important:</strong> This page is for informational purposes only and does not replace professional medical advice, diagnosis, or treatment.
         </div>
       </div>
     </section>
 
     <section id="faq" class="section">
       <h2>Frequently Asked Questions</h2>
-
       <div class="faq" id="faqList">
         <div class="faq-item">
-          <button class="faq-q" type="button" aria-expanded="false">
-            Is hantavirus contagious between people?
-            <span>+</span>
-          </button>
-          <div class="faq-a">
-            It is usually spread from rodents to humans. Person-to-person transmission is uncommon.
-          </div>
+          <button class="faq-q" type="button" aria-expanded="false">Is hantavirus contagious between people? <span>+</span></button>
+          <div class="faq-a">It is usually spread from rodents to humans. Person-to-person transmission is uncommon.</div>
         </div>
-
         <div class="faq-item">
-          <button class="faq-q" type="button" aria-expanded="false">
-            What are the first symptoms?
-            <span>+</span>
-          </button>
-          <div class="faq-a">
-            Early symptoms often include fever, headache, muscle aches, fatigue, and stomach-related symptoms.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-q" type="button" aria-expanded="false">
-            How can I lower my risk?
-            <span>+</span>
-          </button>
-          <div class="faq-a">
-            Reduce rodent access, avoid contact with droppings or nesting material, and clean contaminated areas safely.
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-q" type="button" aria-expanded="false">
-            Is there a vaccine?
-            <span>+</span>
-          </button>
-          <div class="faq-a">
-            There is no specific vaccine or cure. Prevention and supportive care are the main approaches.
-          </div>
+          <button class="faq-q" type="button" aria-expanded="false">What are the first symptoms? <span>+</span></button>
+          <div class="faq-a">Early symptoms often include fever, headache, muscle aches, fatigue, and stomach-related symptoms.</div>
         </div>
       </div>
     </section>
@@ -818,23 +125,10 @@
   <footer class="footer">
     <div class="wrap footer-box">
       <div><strong>HantaGuard24</strong> — clear, modern, and easy to scan.</div>
-      <div class="micro">
-        Disclaimer: This website is for informational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment.
-      </div>
+      <div class="micro">Disclaimer: This website is for informational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment.</div>
     </div>
   </footer>
 
-  <script>
-    document.querySelectorAll(".faq-item").forEach((item) => {
-      const button = item.querySelector(".faq-q");
-      const icon = button.querySelector("span");
-
-      button.addEventListener("click", () => {
-        const isOpen = item.classList.toggle("open");
-        button.setAttribute("aria-expanded", String(isOpen));
-        icon.textContent = isOpen ? "–" : "+";
-      });
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
