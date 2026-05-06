@@ -196,6 +196,12 @@ main { padding: 8px 0 64px; }
   margin-top: 10px;
 }
 
+.ad-wrap {
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 12px 0;
+}
+
 @media (max-width: 920px) {
   .hero-grid, .grid-2, .overview-grid { grid-template-columns: 1fr; }
   .nav { display: none; }
