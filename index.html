@@ -3,174 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hantavirus Awareness | Prevention & Symptoms</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
+    <meta name="description" content="HantaGuard24: Your trusted source for Hantavirus knowledge, symptoms, and prevention. Protect your home and health today.">
+    <title>HantaGuard24 | Hantavirus Knowledge & Protection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lexend:wght@500;700&display=swap" rel="stylesheet">
     <style>
-        scroll-behavior: smooth;
-        .ad-placeholder {
-            background: #f3f4f6;
-            border: 2px dashed #d1d5db;
+        :root {
+            --primary: #1a365d;
+            --accent: #3182ce;
+            --danger: #e53e3e;
+            --bg-light: #f7fafc;
+            --white: #ffffff;
+            --shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        * { box-sizing: border-box; }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            margin: 0; 
+            background-color: #ebf1f5; 
+            color: #2d3748;
+            line-height: 1.6;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: var(--white);
+            padding: 1rem 5%;
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            justify-content: center;
-            color: #9ca3af;
-            font-size: 0.875rem;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo { font-family: 'Lexend', sans-serif; font-size: 1.8rem; font-weight: 700; color: var(--primary); }
+        .logo span { color: var(--accent); }
+
+        nav a { text-decoration: none; color: #4a5568; margin-left: 20px; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; }
+        nav a:hover { color: var(--accent); }
+
+        /* Layout Container */
+        .main-wrapper {
+            max-width: 1200px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: 1fr 300px; /* Sidebar für Werbung */
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            grid-column: 1 / -1;
+            background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?auto=format&fit=crop&q=80&w=1600') center/cover;
+            padding: 60px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            margin-bottom: 20px;
+        }
+
+        .hero h1 { font-family: 'Lexend', sans-serif; font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem; }
+        .hero p { max-width: 700px; margin: 0 auto 2rem; font-size: 1.1rem; color: #718096; }
+
+        /* Cards & Content */
+        section { background: var(--white); padding: 30px; border-radius: 15px; margin-bottom: 30px; box-shadow: var(--shadow); }
+        h2 { border-bottom: 3px solid #edf2f7; padding-bottom: 10px; margin-top: 0; color: var(--primary); }
+
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .status-box { padding: 20px; border-radius: 10px; border-left: 5px solid var(--accent); background: #f0f9ff; }
+
+        .alert { 
+            background: #fff5f5; 
+            border: 1px solid #fed7d7; 
+            padding: 20px; 
+            border-radius: 10px; 
+            display: flex; 
+            align-items: flex-start;
             margin: 20px 0;
+        }
+        .alert-icon { font-size: 1.5rem; margin-right: 15px; }
+
+        /* Sidebar Adsense Styling */
+        .sidebar-ad { position: sticky; top: 100px; }
+        .ad-box { 
+            background: #e2e8f0; 
+            border: 1px solid #cbd5e0; 
+            margin-bottom: 20px; 
+            text-align: center; 
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .ad-label { font-size: 0.7rem; color: #718096; text-transform: uppercase; margin-bottom: 5px; display: block; }
+
+        /* List Styling */
+        .prevention-list { list-style: none; padding: 0; }
+        .prevention-list li { margin-bottom: 15px; padding-left: 30px; position: relative; }
+        .prevention-list li::before { content: '🛡️'; position: absolute; left: 0; }
+
+        footer { background: var(--primary); color: white; padding: 40px 0; text-align: center; margin-top: 60px; }
+
+        @media (max-width: 900px) {
+            .main-wrapper { grid-template-columns: 1fr; }
+            .sidebar-ad { display: none; } /* Sidebar auf Handy verstecken für besseren Lesefluss */
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+<body>
 
-    <!-- Navigation -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold text-red-600 tracking-tight">Hanta<span class="text-gray-700">Guard</span></div>
-            <div class="hidden md:flex space-x-8 font-medium">
-                <a href="#about" class="hover:text-red-600 transition">About</a>
-                <a href="#transmission" class="hover:text-red-600 transition">Transmission</a>
-                <a href="#symptoms" class="hover:text-red-600 transition">Symptoms</a>
-                <a href="#prevention" class="hover:text-red-600 transition">Prevention</a>
-            </div>
-            <a href="#prevention" class="bg-red-600 text-white px-5 py-2 rounded-full hover:bg-red-700 transition shadow-lg">Stay Safe</a>
-        </div>
+<header>
+    <div class="logo">Hanta<span>Guard24</span></div>
+    <nav>
+        <a href="#overview">Overview</a>
+        <a href="#symptoms">Symptoms</a>
+        <a href="#prevention">Prevention</a>
+        <a href="#faq">FAQ</a>
     </nav>
+</header>
 
-    <!-- Hero Section -->
-    <header class="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-20 px-6">
-        <div class="container mx-auto text-center">
-            <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Understanding Hantavirus</h1>
-            <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-8">Vital information on Hantavirus Pulmonary Syndrome (HPS) and how to protect your home and family.</p>
-            
-            <!-- AdSense Top Leaderboard -->
-            <div class="ad-placeholder w-full h-[90px] max-w-[728px] mx-auto">
-                [AdSense Horizontal Leaderboard - 728x90]
-            </div>
-        </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="py-20 container mx-auto px-6">
-        <div class="flex flex-col md:flex-row items-center gap-12">
-            <div class="md:w-1/2">
-                <h2 class="text-3xl font-bold mb-6 text-gray-900">What is Hantavirus?</h2>
-                <p class="text-lg mb-4">Hantaviruses are a family of viruses spread mainly by rodents. While rare, they can cause serious diseases in humans, most notably <strong>Hantavirus Pulmonary Syndrome (HPS)</strong>.</p>
-                <p class="text-lg">As of 2026, awareness remains the primary tool for prevention, as the virus is highly resilient in dusty, enclosed environments like sheds, cabins, and crawlspaces.</p>
-            </div>
-            <div class="md:w-1/2 bg-white p-8 rounded-2xl shadow-xl border-t-4 border-red-600">
-                <h3 class="font-bold text-xl mb-4">Key Facts</h3>
-                <ul class="space-y-3">
-                    <li class="flex items-start"><span class="text-red-600 mr-2">✔</span> Not spread between humans.</li>
-                    <li class="flex items-start"><span class="text-red-600 mr-2">✔</span> Carried by specific wild rodents (e.g., Deer Mouse).</li>
-                    <li class="flex items-start"><span class="text-red-600 mr-2">✔</span> Can be fatal if left untreated.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- AdSense In-Feed -->
-    <div class="container mx-auto px-6">
-        <div class="ad-placeholder w-full h-[250px]">
-            [AdSense In-Article Responsive Ad]
+<div class="main-wrapper">
+    <div class="hero">
+        <h1>Hanta Virus: Knowledge & Protection with HantaGuard24</h1>
+        <p>Your Trusted 24/7 Guide to Understanding and Preventing Hantavirus. Stay Informed, Stay Safe.</p>
+        <div style="background: white; padding: 10px; border-radius: 50px; display: inline-block; border: 1px solid #ddd; width: 80%; max-width: 500px;">
+            🔍 <input type="text" placeholder="Search for symptoms, prevention..." style="border: none; width: 85%; outline: none; padding: 5px;">
         </div>
     </div>
 
-    <!-- Transmission Section -->
-    <section id="transmission" class="py-20 bg-gray-100">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-12">How It Spreads</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-xl shadow">
-                    <div class="text-4xl mb-4">🌬️</div>
-                    <h4 class="font-bold text-xl mb-2">Airborne</h4>
-                    <p>Inhaling dust contaminated with rodent urine, droppings, or saliva (aerosolization).</p>
+    <!-- Main Content -->
+    <main>
+        <section id="overview">
+            <h2>Understanding Hantavirus</h2>
+            <div class="grid">
+                <div class="status-box">
+                    <h3>HPS (Pulmonary)</h3>
+                    <p>A severe respiratory disease found in the Americas, spread primarily by deer mice.</p>
                 </div>
-                <div class="bg-white p-8 rounded-xl shadow">
-                    <div class="text-4xl mb-4">🤝</div>
-                    <h4 class="font-bold text-xl mb-2">Direct Contact</h4>
-                    <p>Touching contaminated materials and then touching your mouth, nose, or eyes.</p>
-                </div>
-                <div class="bg-white p-8 rounded-xl shadow">
-                    <div class="text-4xl mb-4">🐭</div>
-                    <h4 class="font-bold text-xl mb-2">Bites</h4>
-                    <p>Though rare, being bitten by an infected rodent can transmit the virus.</p>
+                <div class="status-box" style="border-color: #48bb78; background: #f0fff4;">
+                    <h3>HFRS (Renal)</h3>
+                    <p>Common in Europe and Asia, affecting the kidneys and causing hemorrhagic fever.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Symptoms Section -->
-    <section id="symptoms" class="py-20 container mx-auto px-6">
-        <h2 class="text-3xl font-bold mb-12 text-center">Early & Late Symptoms</h2>
-        <div class="grid md:grid-cols-2 gap-12">
-            <div class="space-y-6">
-                <h3 class="text-2xl font-semibold text-orange-600">Early Stage (Days 1-5)</h3>
-                <ul class="list-disc list-inside space-y-2 text-lg">
-                    <li>Fatigue and Fever</li>
-                    <li>Muscle aches (especially thighs, hips, back)</li>
-                    <li>Headaches and Dizziness</li>
-                    <li>Chills and Abdominal problems</li>
-                </ul>
-            </div>
-            <div class="space-y-6">
-                <h3 class="text-2xl font-semibold text-red-600">Late Stage (Days 4-10)</h3>
-                <ul class="list-disc list-inside space-y-2 text-lg font-bold">
-                    <li>Coughing and Shortness of breath</li>
-                    <li>Tightness around the chest</li>
-                    <li>Fluid in the lungs</li>
-                    <li>Respiratory failure</li>
-                </ul>
-            </div>
-        </div>
-        <div class="mt-12 p-6 bg-red-50 border-l-4 border-red-600 italic">
-            <strong>Medical Alert:</strong> If you have been around rodents and experience shortness of breath, seek emergency medical care immediately.
-        </div>
-    </section>
-
-    <!-- Prevention Section -->
-    <section id="prevention" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-12 text-center">Prevention is Key</h2>
-            <div class="max-w-4xl mx-auto space-y-8">
-                <div class="flex gap-6 items-start">
-                    <div class="bg-red-100 p-4 rounded-lg text-red-600 font-bold">01</div>
-                    <div>
-                        <h4 class="text-xl font-bold">Seal Up</h4>
-                        <p>Seal gaps in and around your home to prevent rodents from entering. Use steel wool or caulk.</p>
-                    </div>
+        <section id="symptoms">
+            <h2>Symptoms: When to Act</h2>
+            <p>Early symptoms can be mistaken for the flu. Watch for these signs:</p>
+            <div class="grid">
+                <div>
+                    <strong>Early Stage:</strong>
+                    <ul>
+                        <li>Fever & Chills</li>
+                        <li>Muscle Aches (Thighs/Hips)</li>
+                        <li>Fatigue</li>
+                    </ul>
                 </div>
-                <div class="flex gap-6 items-start">
-                    <div class="bg-red-100 p-4 rounded-lg text-red-600 font-bold">02</div>
-                    <div>
-                        <h4 class="text-xl font-bold">Trap Up</h4>
-                        <p>Use snap traps in areas where rodents are likely to be found. Keep areas clean of food sources.</p>
-                    </div>
-                </div>
-                <div class="flex gap-6 items-start">
-                    <div class="bg-red-100 p-4 rounded-lg text-red-600 font-bold">03</div>
-                    <div>
-                        <h4 class="text-xl font-bold">Clean Up (Safely)</h4>
-                        <p><strong>Never sweep or vacuum</strong> rodent droppings. Wet the area with disinfectant or a 10% bleach solution before cleaning.</p>
-                    </div>
+                <div>
+                    <strong>Late Stage:</strong>
+                    <ul>
+                        <li>Shortness of breath</li>
+                        <li>Coughing</li>
+                        <li>Chest tightness</li>
+                    </ul>
                 </div>
             </div>
-
-            <!-- AdSense Bottom Rectangle -->
-            <div class="ad-placeholder w-full h-[250px] max-w-[336px] mx-auto mt-16">
-                [AdSense Large Rectangle - 336x280]
+            <div class="alert">
+                <span class="alert-icon">⚠️</span>
+                <div>
+                    <strong>Medical Warning:</strong> If you develop shortness of breath after being around rodent droppings, seek medical attention immediately.
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-12 px-6">
-        <div class="container mx-auto text-center">
-            <p class="mb-4">&copy; 2026 HantaGuard Information Portal. This site is for educational purposes only.</p>
-            <div class="text-sm">
-                Sources: CDC, World Health Organization (WHO), Public Health Agency of Canada.
-            </div>
+        <!-- In-Content Ad -->
+        <div class="ad-box">
+            <span class="ad-label">Advertisement</span>
+            <!-- AdSense Code Here -->
+            <div style="height: 90px; display: flex; align-items: center; justify-content: center; color: #999;">Responsive Ad Unit</div>
         </div>
-    </footer>
+
+        <section id="prevention">
+            <h2>Proven Prevention Strategies</h2>
+            <ul class="prevention-list">
+                <li><strong>Seal Up:</strong> Close holes in your home or garage to prevent rodent entry.</li>
+                <li><strong>Trap Up:</strong> Use snap traps in areas where rodents are active.</li>
+                <li><strong>Clean Up:</strong> Disinfect areas using a 10% bleach solution. <strong>Never sweep or vacuum!</strong></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Sidebar for AdSense (Higher Revenue) -->
+    <aside class="sidebar-ad">
+        <div class="ad-box" style="min-height: 250px;">
+            <span class="ad-label">Advertisement</span>
+            <!-- AdSense Square Ad -->
+            <div style="height: 250px; display: flex; align-items: center; justify-content: center; color: #999;">300x250 Ad</div>
+        </div>
+
+        <div class="ad-box" style="min-height: 600px;">
+            <span class="ad-label">Advertisement</span>
+            <!-- AdSense Skyscraper Ad -->
+            <div style="height: 600px; display: flex; align-items: center; justify-content: center; color: #999;">300x600 Skyscraper</div>
+        </div>
+    </aside>
+</div>
+
+<footer>
+    <div class="logo" style="color: white; margin-bottom: 20px;">Hanta<span>Guard24</span></div>
+    <p>© 2024 HantaGuard24 | A Public Health Resource | <a href="#" style="color: white;">Contact Us</a> | <a href="#" style="color: white;">Privacy Policy</a></p>
+</footer>
 
 </body>
 </html>
